@@ -1,0 +1,35 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "C:\\Users\\lim23\\Downloads",
+        "C:\\Users\\lim23\\AppData\\Local\\Programs\\Python"
+      ]
+    },
+    "google-maps":{
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-google-maps"
+      ],
+      "env": {
+        "GOOGLE_MAPS_API_KEY": "GOOGLE_MAPS_API_KEY"
+      }
+    },
+    "weather": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "C:\\Windows\\System32\\weather",
+        "run",
+        "weather.py"
+      ],
+      "env": {
+        "service_key": "weather_your_key"
+      }
+    }
+  }
+}
